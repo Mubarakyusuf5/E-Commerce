@@ -1,0 +1,130 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 5%;
+}
+.form-group{
+position: relative;
+width: 250px;
+margin-bottom: 18px;
+width: 100%;
+}
+.form-group input, .form-group textarea{
+width: 100%;
+padding: 9px;
+border: 1px solid darkgray;
+background: #fff;
+border-radius: 5px;
+outline: none;
+color: #000;
+font-size: 1em;
+transition: 0.5s;
+}
+.form-group span{
+position: absolute;
+color: darkgray;
+left: 0;
+padding: 9px;
+pointer-events: none;
+font-size: 1em;
+transition: 0.5s;
+}
+.form-group input:valid ~ span,
+.form-group input:focus ~ span,
+.form-group textarea:valid ~ span,
+.form-group textarea:focus ~ span{
+color: dodgerblue;
+transform: translateX(10px) translateY(-7px);
+font-size: 0.65em;
+padding: 0 10px;
+background: #fff;
+border-right: 1px solid dodgerblue;
+border-left: 1px solid dodgerblue;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+}
+.form-group input:valid,
+.form-group input:focus,
+.form-group textarea:valid,
+.form-group textarea:focus {
+border: 1px solid dodgerblue;
+}
+form{
+background: #fff;
+padding: 18px;
+width: 500px;
+border-radius: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+/* margin: 50px 0; */
+margin-bottom: 50px;
+}
+.btn{
+background: dodgerblue;
+padding: 9px;
+outline: none;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 0.9em;
+font-weight: 600;
+color: #fff;
+width: 100%;
+margin: 0px 0 18px;
+}
+.btn:hover{
+background: rgb(26, 123, 219);
+}
+h2{
+margin-bottom: 18px;
+}
+table th{
+    font-size: 1.1em;
+    background: #292727;
+    color: #fff;
+}
+table td{
+    color: #0f0f0f;
+}
+table tr:nth-child(odd){
+    background-color: #dddada;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+th,
+td {
+    border: 1px solid #eee;
+    padding: 10px;
+    text-align: center;
+}
+table button{
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.del{
+    background-color: #f44336;
+    margin-right: 10px;
+}
+.del:hover{
+    background-color: #bd2d23;
+}
+.edit{
+    background-color: #e9c72e;
+}
+.edit:hover{
+    background-color: #ccae27;
+}

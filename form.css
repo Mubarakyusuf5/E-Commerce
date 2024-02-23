@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: rgb(49, 57, 66); */
+    background: #eee;
+    flex-direction: column;
+}
+.form-group{
+    position: relative;
+    width: 250px;
+    margin-bottom: 18px;
+    width: 100%;
+}
+.form-group input{
+    width: 100%;
+    padding: 9px;
+    border: 1px solid darkgray;
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+    color: #000;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.form-group span{
+    position: absolute;
+    color: darkgray;
+    left: 0;
+    padding: 9px;
+    pointer-events: none;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.form-group input:valid ~ span,
+.form-group input:focus ~ span{
+    color: dodgerblue;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #fff;
+    border-right: 1px solid dodgerblue;
+    border-left: 1px solid dodgerblue;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.form-group input:valid,
+.form-group input:focus{
+    border: 1px solid dodgerblue;
+}
+.btn{
+    background: dodgerblue;
+    padding: 9px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #fff;
+    width: 100%;
+    margin: 20px 0 18px;
+}
+.btn:hover{
+    background: rgb(26, 123, 219);
+}
+.btn1{
+    background: dodgerblue;
+    padding: 9px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #fff;
+    width: 100%;
+    margin: 0 0 18px;
+}
+.btn1:hover{
+    background: rgb(26, 123, 219);
+}
+h2{
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #000;
+}
+form{
+    background: #fff;
+    padding: 18px;
+    width: 340px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+a.frgt{
+    color: dodgerblue;
+    font-size: 0.9em;
+}
+p.sign-up a, p.login a{
+    color: dodgerblue;
+}
+p.sign-up, p.login{
+    color: #000;
+    font-size: 0.9em;
+}
