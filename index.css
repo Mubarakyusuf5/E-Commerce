@@ -38,6 +38,19 @@ nav ul a{
     color: #eee;
     transition: 0.3s;
 }
+.lin {
+    display: flex;
+    width: 70px;
+    text-align: center;
+    gap: 3px;
+}
+.lin span {
+    color: white;
+    background: #504b4b;
+    padding: 0 3px;
+    border-radius: 7px;
+    font-size:large;
+}
 /* ........................pmenu................ */
 #pmenu{
     position: absolute;
@@ -158,11 +171,10 @@ nav img.user{
 .container{
     background: #eee;
     min-height: 100vh;
-    padding: 0 5%;
+    padding: 30px 5%;
 }
 .container h1{
     text-align: center;
-    padding-top: 30px;
     font-size: 2.3em;
 }
 .products{
@@ -173,36 +185,65 @@ nav img.user{
 
 }
 .product{
+    /* border: 1px solid #000; */
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.3);
+}
+.product img{
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 5px 5px 0 0;
+    margin-top: 5px;
+}
+.info{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid #000;
-    border-radius: 5px;
-}
-.product img{
+    padding: 7px 8px 19px;
     width: 100%;
-    border-radius: 5px 5px 0 0;
 }
-.btn{
+.info h3{
+    font-size: 1.3em;
+}
+.info p{
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+.info .btn{
     cursor: pointer;
-    width: 70%;
+    width: 80%;
     background-color: #3083c7;
     padding: 10px;
     border: none;
     outline: none;
     border-radius: 15px;
     color: #fff;
-    font-size: .8em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    font-size: 1em;
+    text-align: center;
 }
 .btn:hover{
     background-color: #226ba7;
 }
-.btn svg{
-    font-size: 1em;
-    color: #8a8a8a;
+
+.sidebar{
+    background: #226ba7;
+    /* padding: 10px; */
+    width: 250px;
+}
+.head{
+    font-size: 1.7em;
+    font-weight: 600;
+    color: #fff;
+    margin: 4px 8px 5px;
+}
+.side a{
+    color: #fff;
+    background: #3083c7;
+    display: block;
+    padding: 10px;
+}
+.side a:hover{
+    background: #2a456d;
 }
